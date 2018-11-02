@@ -1,6 +1,6 @@
-package com.company;
+package com.example.strategy.toothbrush;
 
-public class SolarToothBrush implements IsElectric {
+public class SolarToothBrush implements Chargeble {
     public String getBattery() {
         return "солнечная батарея";
     }

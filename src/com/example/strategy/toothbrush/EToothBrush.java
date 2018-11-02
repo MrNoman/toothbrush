@@ -1,19 +1,19 @@
-package com.company;
+package com.example.strategy.toothbrush;
 
 public class EToothBrush {
     private final boolean engine = true;
     private boolean bristle = true;
-    private IsElectric isElectric = new BatteryToothBrush();
+    private Chargeble chargeble = new BatteryToothBrush();
 
     public void getAllProperties(){
         System.out.println(" Двигатель: " + this.engine
                             + "\n Щетина: " + this.bristle
-                            + "\n Батарея: " + isElectric.getBattery()
+                            + "\n Батарея: " + chargeble.getBattery()
                             +"\n************************");
     }
 
-    public void setIsElectric (IsElectric isElectric){
-        this.isElectric = isElectric;
+    public void setChargeble(Chargeble chargeble){
+        this.chargeble = chargeble;
     }
 
 }

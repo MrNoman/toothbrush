@@ -1,4 +1,4 @@
-package com.company;
+package com.example.strategy.toothbrush;
 
 public class Main {
 
@@ -6,7 +6,7 @@ public class Main {
         EToothBrush brush = new EToothBrush();
         brush.getAllProperties();
 
-        brush.setIsElectric(new SolarToothBrush());
+        brush.setChargeble(new SolarToothBrush());
         brush.getAllProperties();
    }
 }
